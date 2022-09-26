@@ -1,0 +1,362 @@
+/* core styles */
+.mmc {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* app component style */
+.app {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Starting Countdown Styles  */
+
+.count_content {
+  flex-direction: column;
+}
+
+.sc_main_col {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+  flex-direction: column;
+}
+
+.sc_message {
+  margin-bottom: 1rem;
+}
+.sc_message_text {
+  width: 142px;
+  height: 40px;
+  left: 652px;
+  top: 240px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.006em;
+  color: #000000;
+}
+
+.cr_message_text {
+  width: 255px;
+  height: 40px;
+  left: 597px;
+  top: 240px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.006em;
+  color: #000000;
+}
+
+/* result page */
+.adv_text {
+  width: 136px;
+  height: 63px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 63px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: -0.006em;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.sub_adv_text {
+  width: 350px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #6d747a;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.result_progress {
+  flex-direction: column;
+}
+.adv {
+  flex-direction: column;
+}
+.share_score_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 10px;
+  width: 162px;
+  height: 40px;
+  background: #2f6ce5;
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.share_link {
+  width: 130px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: white;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.share_link:hover {
+  color: white;
+}
+.back_home_link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-end;
+  color: #2f6ce5;
+}
+
+.message_to_user_text {
+  width: 350px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #6d747a;
+}
+
+.result_header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.retake_btn_box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  gap: 10px;
+  position: absolute;
+  width: 76px;
+  height: 32px;
+  left: 1284px;
+  top: 24px;
+  background: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+}
+
+.retake_btn_text {
+  width: 52px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #08090a;
+  flex: none;
+  margin-left: 0.1rem;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Quiz page styles */
+.quiz_main_container {
+  height: 100vh;
+  width: 100%;
+}
+
+.quiz_timer_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  padding: 8px 24px;
+  gap: 8px;
+  width: 94px;
+  height: 40px;
+  left: 1271px;
+  top: 24px;
+  background: #00b879;
+  border-radius: 8px;
+}
+
+
+.question_num_text {
+  width: 112px;
+  height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  letter-spacing: 0.006em;
+  color: #2f6ce5;
+  justify-content: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.question_text_main {
+  width: 592px;
+  height: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: -0.006em;
+  color: #08090a;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.quiz_col_main {
+  flex-direction: column;
+}
+
+.image_question_col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_question_row {
+  margin-top: 5rem;
+}
+
+.image_quest_real_img {
+  box-sizing: border-box;
+  height: 330px;
+  border: 1px solid #ebedf0;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  cursor: pointer;
+}
+
+.skip_me {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2f6ce5;
+}
+
+.radio_mcq {
+  width: 592px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  background: #2f6ce5;
+  opacity: 0.07;
+  border-radius: 32px;
+  display: flex;
+}
+
+.mcq_btn {
+  width: 592px;
+  height: 48px;
+  background: #e8f0ff;
+  /* opacity: 0.07; */
+  border-radius: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.radio_mcq_text {
+  width: 490px;
+  height: 54px;
+  left: 52px;
+  top: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #6d747a;
+  text-align: left;
+  padding-bottom: 0.4rem;
+}
+
+.ant-radio {
+  margin-right: 1rem !important;
+}
+
+.code_question_box {
+  background: #474747;
+  border-radius: 8px;
+  width: 340px;
+  height: 346px;
+}
+
+.code_text {
+  height: 126px;
+  width: 200px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.001em;
+  color: #ffffff;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+}
+
+.ant-statistic-content-value {
+  width: 46px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 0.7rem;
+  margin-left: 0.55rem;
+}
