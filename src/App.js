@@ -8,16 +8,13 @@ import {StartingCountdown,Quiz,Result,ResultCountdown} from './pages/index'
 
 function App() {
   const [startCount, setStartCount] = useState(5)
-  const [resultCount, setResultCount] = useState(5)
   const navigate = useNavigate()
 
   useEffect(()=>{
     startCount > 0 && setTimeout(() => setStartCount(startCount - 1), 1000);
   },[startCount])
 
-  useEffect(()=>{
-    resultCount > 0 && setTimeout(() => setResultCount(resultCount - 1), 1000);
-  },[resultCount])
+
 
   // console.log(startCount)
 
@@ -38,7 +35,6 @@ function App() {
         <Route exact path="/" element={<StartingCountdown startCount={startCount} />} />
       )}
 
-        {/* <ResultCountdown resultCount={resultCount}/> */}
 
         {/* <Result resultNumber={70}/> */}
 

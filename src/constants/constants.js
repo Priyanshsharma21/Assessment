@@ -1,6 +1,8 @@
 import {
     q1Img1,
-    q1Img2
+    q1Img2,
+    q5img1,
+    q5img2
 } from '../assets/index'
 
 export const advices = [{
@@ -50,7 +52,7 @@ export const questions = [{
             "_id": "6315a9d0211e6162b8431271",
             "question_type": "image",
             "answer_type": "image",
-            "body": "Choose the image with proper design rules.",
+            "body": "Choose hello it the image with proper design rules.",
             "answers": [{
                     "answer": q1Img1,
                     "is_correct": true,
@@ -197,25 +199,12 @@ export const questions = [{
             "answer_type": "code",
             "body": "Which code is will save memory?",
             "answers": [{
-                    "answer": `
-                    #include<stdio.h>
-                    int main(void)
-                    {
-                        printf("Hello World\n");
-                        return 0;
-                    }`,
+                    "answer": q5img1,
                     "is_correct": false,
                     "_id": "6315a9d0211e6162b8431292"
                 },
                 {
-                    "answer": `#include<stdio.h>
-                    #include<math.h>
-                    
-                    int main(void)
-                    {
-                        printf("Hello World\n");
-                        return 0;
-                    }`,
+                    "answer": q5img2,
                     "is_correct": true,
                     "_id": "6315a9d0211e6162b8431295"
                 }

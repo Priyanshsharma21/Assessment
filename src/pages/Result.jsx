@@ -33,11 +33,11 @@ const Result = ({resultNumber}) => {
 
   return (
     <div className="container-fluid sc_main_col mmc">
-      <div className="result_header">
+      <div className="result_header result_h2 mt-20 mr-1">
           <div className="retake_btn_box">
-               <Link to={`/`} className="retake_btn_text">
+               <a href={`/`} className="retake_btn_text">
                   Retake
-                </Link>
+                </a>
           </div>
       </div>
       <div className="row">
