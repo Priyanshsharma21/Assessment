@@ -14,7 +14,7 @@ const { Countdown } = Statistic;
 
 const Quiz = () => {
   const [valueMcq, setValueMcq] = useState(false);
-  const [currentQuestion, setCurrentQuestion] = useState(4)
+  const [currentQuestion, setCurrentQuestion] = useState(0)
   const [showEndCount, setShowEndCount] = useState(false)
   const [showResult, setShowResult] = useState(false)
   const [alterType, setAlertType] = useState("")
@@ -157,19 +157,12 @@ const Quiz = () => {
              whileTap={{ scale: 0.9 }}
              onClick={()=>handleAnswers(answer?.is_correct)}
             >
-
             <pre>
               <code className="code_style">
                   {answer?.answer}
               </code>
             </pre>
 
-               {/* <Image
-                 width={230}
-                 src={answer?.answer}
-                 className="code_text"
-                 preview={false}
-               /> */}
             </motion.div>
           </Col>
           ))}
