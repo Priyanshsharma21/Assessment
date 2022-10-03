@@ -20,7 +20,7 @@ const ResultCountdown = ({result}) => {
 
             <div className="sc_message mmc">
               <h4 className="cr_message_text">
-              Calculating results
+                 Calculating results
               </h4>
             </div>
       <Progress

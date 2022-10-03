@@ -41,7 +41,8 @@ export const advices = [{
 ]
 
 
-export const questions = [{
+export const questions = [
+    {
         "_id": "6315aabd211e6162b8431277",
         "time_limit": 120,
         "attempts_allowed": 3,
@@ -199,12 +200,34 @@ export const questions = [{
             "answer_type": "code",
             "body": "Which code is will save memory?",
             "answers": [{
-                    "answer": q5img1,
+                    "answer": 
+                    `
+   #include<stdio.h>
+
+   int main(void)
+
+  {
+    printf("Hello World");
+    return 0;
+  }
+                    `,
+
                     "is_correct": false,
                     "_id": "6315a9d0211e6162b8431292"
                 },
                 {
-                    "answer": q5img2,
+                    "answer": 
+                    `
+   #include<stdio.h>
+
+   int main(void)
+                  
+  {
+      printf("Hello World");
+      return 0;
+  }
+                    `,
+
                     "is_correct": true,
                     "_id": "6315a9d0211e6162b8431295"
                 }

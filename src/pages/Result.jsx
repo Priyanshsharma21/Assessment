@@ -33,7 +33,7 @@ const Result = ({resultNumber}) => {
 
   return (
     <div className="container-fluid sc_main_col mmc">
-      <div className="result_header result_h2 mt-20 mr-1">
+      <div className="result_header result_h2 mr-1">
           <div className="retake_btn_box">
                <a href={`/`} className="retake_btn_text">
                   Retake

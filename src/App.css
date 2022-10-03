@@ -479,7 +479,7 @@
     order: 1;
     flex-grow: 0;
   }
-  .result_h2{
+  .result_h2 {
     margin-top: 18rem !important;
   }
   .message_to_user_text {
@@ -516,4 +516,17 @@
     order: 0;
     flex-grow: 0;
   }
+}
+
+.code_style {
+  height: 126px;
+  left: 24px;
+  right: 24px;
+  top: 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.001em;
+  color: #ffffff;
 }

@@ -14,7 +14,7 @@ const { Countdown } = Statistic;
 
 const Quiz = () => {
   const [valueMcq, setValueMcq] = useState(false);
-  const [currentQuestion, setCurrentQuestion] = useState(0)
+  const [currentQuestion, setCurrentQuestion] = useState(4)
   const [showEndCount, setShowEndCount] = useState(false)
   const [showResult, setShowResult] = useState(false)
   const [alterType, setAlertType] = useState("")
@@ -50,7 +50,6 @@ const Quiz = () => {
 
   const handleAnswers = async(is_correct)=>{
 
-      console.log(is_correct)
 
         if(is_correct===true){
           setScore(score+1)
@@ -88,7 +87,7 @@ const Quiz = () => {
         <div className="col quiz_col_main mmc">
            <div className="question_number mmc">
                 <h4 className="question_num_text">
-                    {questions[currentQuestion]?.questionNumber}/{questions.length}
+                    {currentQuestion + 1}/{questions.length}
                 </h4>
            </div>
            <div className="question_text mmc">
@@ -158,12 +157,19 @@ const Quiz = () => {
              whileTap={{ scale: 0.9 }}
              onClick={()=>handleAnswers(answer?.is_correct)}
             >
-               <Image
+
+            <pre>
+              <code className="code_style">
+                  {answer?.answer}
+              </code>
+            </pre>
+
+               {/* <Image
                  width={230}
                  src={answer?.answer}
                  className="code_text"
                  preview={false}
-               />
+               /> */}
             </motion.div>
           </Col>
           ))}

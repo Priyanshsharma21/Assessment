@@ -1,9 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import {Routes,Route,useNavigate  } from "react-router-dom";
-import {motion} from 'framer-motion'
-import {questions} from './constants/constants'
-import {StartingCountdown,Quiz,Result,ResultCountdown} from './pages/index'
+import {StartingCountdown,Quiz} from './pages/index'
 
 
 function App() {
@@ -16,28 +14,14 @@ function App() {
 
 
 
-  // console.log(startCount)
-
-
   return (
     <div className="app container-fluid">
     <Routes>
       {startCount===0 ?(
-        <>attempts_allowed
-        {/* {navigate('/quiz')} */}
-        <Route exact path="/" element={
-          <>
-              <Quiz />
-          </>
-        } />
-        </>
+        <Route exact path="/" element={<Quiz />} />
       ):(
         <Route exact path="/" element={<StartingCountdown startCount={startCount} />} />
       )}
-
-
-        {/* <Result resultNumber={70}/> */}
-
     </Routes>
     </div>
   );
